@@ -1,0 +1,46 @@
+    .articlesContainer {
+        padding: 20px;
+        background-color: #fff;
+    }
+    
+    .articlesGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .articleCard {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+    }
+    
+    .articleCard:hover {
+        transform: translateY(-5px);
+    }
+    
+    .articleImage {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .heading {
+        margin: 10px 0;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .description {
+        color: #555;
+        font-size: 1.3rem;
+    }
+    
+    .date {
+        display: block;
+        margin-top: 5px;
+        color: #888;
+        font-size: 1.0rem;
+    }

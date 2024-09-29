@@ -1,0 +1,98 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    /* background: #000; */
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+}
+
+.blogSection {
+    padding: 2.5rem 0;
+}
+
+.sectionTitle {
+    font-size: 10rem;
+    font-weight: bold;
+}
+
+.blogList {
+    padding-top: 0.5rem;
+}
+
+.blogItem {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.blogTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.subTitle {
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 2%;
+    font-size: 2rem;
+}
+
+.desc {
+    color: #000000;
+    /* font-weight: bold; */
+    line-height: 1.6;
+    font-size: 1.3rem;
+}
+
+.description {
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+    font-size: 1.3rem;
+}
+
+.blogDate {
+    color: #000000;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    .subTitle {
+        font-size: 1.8rem;
+    }
+    .desc,
+    .description {
+        font-size: 1.1rem;
+        margin: 0 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 0 0.5rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .subTitle {
+        font-size: 1.5rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .blogItem {
+        padding: 0.25rem 0;
+    }
+}
