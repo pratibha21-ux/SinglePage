@@ -15,7 +15,7 @@ async function getBlogs() {
     const { data: frontMatter } = matter(fileContent);
     return {
       meta: frontMatter,
-      slug: filename.replace('.mdx', ''),
+      // slug: filename.replace('.mdx'),
     };
   });
 
@@ -31,8 +31,9 @@ export default async function Home() {
       <section className={styles.blogSection}>
         <div className={styles.blogList}>
           {blogs.map((blog) => (
-            <article className={styles.blogItem} key={blog.slug}>
-              <Link href={'/blogs/' + blog.slug} passHref>
+            <article className={styles.blogItem} >
+              
+              <div>
                 <Image src={blog.meta.image} alt={blog.meta.title} width={800} height={300} /><br/>
                 <h3 className={styles.subTitle}>{blog.meta.title}</h3><br/>
                 <p className={styles.description}>{blog.meta.firstdescription}</p><br/>
@@ -45,7 +46,8 @@ export default async function Home() {
                 <h3 className={styles.description}>{blog.meta.subtitle}</h3><br/>
                 <p className={styles.description}>{blog.meta.thirddescription}</p><br/>
                 <p className={styles.description}>{blog.meta.fourthdescription}</p>
-              </Link>
+             
+              </div>
             </article>
           ))}
         </div>

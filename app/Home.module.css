@@ -1,7 +1,6 @@
 .main {
     display: flex;
     flex-direction: column;
-    /* background: #000; */
 }
 
 .title {
@@ -47,9 +46,9 @@
 
 .desc {
     color: #000000;
-    /* font-weight: bold; */
     line-height: 1.6;
     font-size: 1.3rem;
+    justify-content: space-between;
 }
 
 .description {
@@ -58,6 +57,8 @@
     margin-right: auto;
     line-height: 1.8;
     font-size: 1.3rem;
+    text-align: justify;
+    max-width: 100%;
 }
 
 .blogDate {
